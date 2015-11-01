@@ -4,6 +4,11 @@ public class TreeStory {
 
   public static void main(String[] args) {
     Console console = System.console();
+    int age = 12;
+    if (age < 13) {
+      console.printf("Sorry you must be at least 13 to use this program.\n");
+      System.exit(0);
+    }
     String name = console.readLine("Enter your name: ");
     String adjective = console.readLine("Enter an adjective: ");
     String noun = console.readLine("Enter a noun: ");
